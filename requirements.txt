@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy
 scikit-learn
-dlib-bin
+dlib
 face-recognition
 setuptools
 supabase
