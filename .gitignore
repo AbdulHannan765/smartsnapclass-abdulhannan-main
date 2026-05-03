@@ -1,0 +1,16 @@
+
+.env
+
+
+venv318/
+
+__pycache__/
+*.pyc
+
+.vscode/
+
+
+.streamlit/secrets.toml
+
+
+dist/
