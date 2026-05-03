@@ -9,4 +9,4 @@ segno
 pillow
 deepface
 tf-keras
-opencv-python
+opencv-python-headless
