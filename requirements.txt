@@ -1,4 +1,4 @@
-sstreamlit
+streamlit
 pandas
 numpy
 scikit-learn
@@ -7,6 +7,7 @@ supabase
 bcrypt
 segno
 pillow
-deepface
+deepface==0.0.93
 tf-keras
+tensorflow==2.18.0
 opencv-python-headless==4.9.0.80
