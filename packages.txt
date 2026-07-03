@@ -1,8 +1,8 @@
 libglib2.0-0t64
 libgl1
 libsm6
-<<<<<<< HEAD
+
 libxrender1
-=======
+
 libxrender1
->>>>>>> 3e318035e868c2bdb2da656e07f29bee3358e04a
+
