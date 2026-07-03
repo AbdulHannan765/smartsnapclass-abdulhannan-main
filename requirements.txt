@@ -1,13 +1,26 @@
+<<<<<<< HEAD
 ﻿streamlit==1.58.0
 pandas==2.2.2
 numpy==1.26.4
 scikit-learn==1.5.2
+=======
+streamlit
+pandas
+numpy==1.26.4
+scikit-learn
+>>>>>>> 3e318035e868c2bdb2da656e07f29bee3358e04a
 setuptools
 supabase
 bcrypt
 segno
 pillow
 deepface==0.0.93
+<<<<<<< HEAD
 tf-keras==2.18.0
 tensorflow==2.18.0
 opencv-python-headless==4.9.0.80
+=======
+tf-keras
+tensorflow==2.18.0
+opencv-python-headless==4.9.0.80
+>>>>>>> 3e318035e868c2bdb2da656e07f29bee3358e04a
