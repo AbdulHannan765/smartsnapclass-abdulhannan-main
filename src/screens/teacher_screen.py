@@ -7,6 +7,11 @@ from src.screens.home_screen import home_screen
 from src.database.db import teacher_username_exist,add_teacher_profile,login
 from src.screens.faculty_dashboard import teacher_dashboard
 def teacher_screen():
+    st.set_page_config(
+                      
+                        layout="centered",
+                        
+                    )
     if "allow_teacher_dashboard"  in st.session_state and st.session_state["allow_teacher_dashboard"]=="allow":
      teacher_dashboard()
      return
@@ -17,6 +22,7 @@ def teacher_screen():
             login_background_teacher()
             if st.button("BACK TO HOME" ,type="tertiary",width=250,key="1265to_home"):
                   st.session_state.clear()
+                  st.session_state["login_type"]="home_screen"
                   
                   st.rerun()
             

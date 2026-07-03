@@ -6,6 +6,12 @@ from src.ui.base_layout import   hide_streamlit_layout
 from src.ui.base_layout import  home_font_and_style
 
 def home_screen():
+    st.set_page_config(
+                      
+                        layout="centered",
+                        
+                    )
+   
    
     
    
@@ -13,6 +19,9 @@ def home_screen():
     style_backround_home()
     hide_streamlit_layout()
     home_font_and_style()
+    if st.button("GO Back"):
+           st.session_state.clear()
+           st.rerun()
 
    
     st.markdown("""

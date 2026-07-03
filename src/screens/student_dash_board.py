@@ -3,6 +3,11 @@ from src.ui.base_layout import login_background_student,hide_streamlit_layout,ho
 from src.components.dialog_enrol import show_enroled_subjects,enrol
 
 def student_dashboard():
+   st.set_page_config(
+                     
+                       layout="centered",
+                       
+                   )
    login_background_student()
    hide_streamlit_layout()
    home_font_and_style()
@@ -20,6 +25,8 @@ def student_dashboard():
       
       if st.button("Log Out",type="tertiary"):
          st.session_state.clear()
+         st.session_state["login_type"]="home_screen"
+         
          
          st.rerun()
    st.space()

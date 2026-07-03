@@ -10,6 +10,11 @@ from src.screens.home_screen import home_screen
 import time 
 from src.database.config import supabase
 def student_screen():
+   st.set_page_config(
+                     
+                       layout="centered",
+                       
+                   )
    if "student_data" in st.session_state and st.session_state["student_data"]!=None and "student_id" in st.session_state and st.session_state["student_id"]!=None:
       
       student_dashboard()
@@ -22,6 +27,7 @@ def student_screen():
 
    if st.button("home",type="tertiary",width=250,key="1265to_home"):
       st.session_state.clear()
+      st.session_state["login_type"]="home_screen"
       st.rerun()
    
    login_background_student()

@@ -5,6 +5,7 @@ from src.screens.teacher_screen import teacher_screen
 from src.screens.student_dash_board import student_dashboard
 from src.screens.faculty_dashboard import teacher_dashboard
 from src.components.auto_enrol import auto_enrol_dialog
+from src.screens.landing_p import landing_page
 
 def main():
    st.set_page_config(
@@ -28,9 +29,12 @@ def main():
             teacher_screen()
          case "student":
             student_screen()
+         case "home_screen":
+           home_screen()
        
          case None:
-            home_screen()
+            
+            landing_page()
 
    
            

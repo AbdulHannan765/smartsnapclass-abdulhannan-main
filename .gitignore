@@ -2,6 +2,7 @@
 .env
 
 venv/
+venv8/
 venv318/
 
 __pycache__/

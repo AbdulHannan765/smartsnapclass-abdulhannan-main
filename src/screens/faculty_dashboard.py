@@ -5,6 +5,12 @@ from src.ui.base_layout import  home_font_and_style
 from src.ui.base_layout import style_backround_home
 from src.screens.faculty_tabs import attendance_records,take_attendance,manage_subjects
 def teacher_dashboard():
+    st.set_page_config(
+                      
+                        layout="centered",
+                        
+                    )
+    
    
     if "current_faculty_tab" not in st.session_state:
         st.session_state["current_faculty_tab"]="take_attendance"
@@ -31,6 +37,7 @@ def teacher_dashboard():
          
         if st.button("Log Out",type="tertiary"):
            st.session_state.clear()
+           st.session_state["login_type"]="home_screen"
            st.rerun()
     tab1,tab2,tab3=st.columns(3)
     with tab1:
